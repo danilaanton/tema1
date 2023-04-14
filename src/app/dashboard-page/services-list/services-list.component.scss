@@ -1,0 +1,23 @@
+.container {
+    width: 75%;
+    height: 800px;
+    margin: 20px 12.5% 20px;
+    padding: 0px 50px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+h1{
+  text-align: center;
+}
+
+.container .dashboard-container{
+  width: auto;
+  margin:10px 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+

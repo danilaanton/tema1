@@ -1,0 +1,56 @@
+.container {
+    width: 75%;
+    height: 800px;
+    margin: 20px 12.5% 20px;
+    background-color: rgb(236, 236, 236);
+    padding: 0px 50px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+h1{
+  text-align: center;
+}
+
+.container .button-container{
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin:10px 30px 10px;
+}
+
+.button-container button{
+  width: fit-content;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight:bold;
+  background-color: transparent;
+  vertical-align: middle;
+  border: 0px transparent;
+}
+
+.button-container button:hover{
+  background-color: rgba(128, 128, 128, 0.274);
+  cursor:pointer;
+}
+
+.container .dashboard-container{
+  width: auto;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+  margin:10px 30px 10px;
+}
+
+.container .services-dashboard-container{
+  width: auto;
+  margin:10px 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+

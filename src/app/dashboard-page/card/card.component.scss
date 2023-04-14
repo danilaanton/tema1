@@ -1,0 +1,16 @@
+.container{
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+h1{
+    margin: 10px 20px 10px;
+    font-family: Arial, Helvetica, sans-serifgu;
+    font-size: 1.2rem;
+    color: rgb(125, 202, 165);
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}

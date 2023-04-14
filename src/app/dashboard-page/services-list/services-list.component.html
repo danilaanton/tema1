@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>OUR SERVICES</h1>
+    <div class="dashboard-container">
+        <div *ngFor="let cardElem of cards; let index = index">
+            <app-card [card]="cardElem"></app-card>
+        </div>
+    </div>
+</div>
