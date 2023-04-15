@@ -30,4 +30,9 @@ export class TitleComponent {
       this.selectedCity = city;
     });
   }
+
+  openNewTab() {
+    const url = this.selectedCity.image;
+    window.open(url, '_blank');
+  }
 }
