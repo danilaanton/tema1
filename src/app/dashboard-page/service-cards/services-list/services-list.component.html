@@ -1,5 +1,8 @@
 <div class="container">
-  <h1>OUR SERVICES</h1>
+  <div class="text-container">
+    <h1>OUR SERVICES</h1>
+    <div class="line"></div>
+  </div>
   <div class="dashboard-container">
     <div *ngFor="let cardElem of cards; let index = index">
       <app-service-card [card]="cardElem"></app-service-card>
