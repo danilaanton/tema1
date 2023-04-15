@@ -1,7 +1,7 @@
 .container {
     width: 75%;
     height: 800px;
-    margin: 20px 12.5% 20px;
+    margin: 40px 12.5% 80px;
     background-color: rgb(236, 236, 236);
     padding: 0px 50px 0px;
     border-radius: 10px;
@@ -12,6 +12,8 @@
 
 h1{
   text-align: center;
+  font-family: Arial, Helvetica, sans-serifgu;
+  color: rgb(125, 202, 165);
 }
 
 .container .button-container{
@@ -22,6 +24,7 @@ h1{
 }
 
 .button-container button{
+  color: rgb(17, 17, 17);
   width: fit-content;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: larger;
@@ -31,9 +34,13 @@ h1{
   border: 0px transparent;
 }
 
-.button-container button:hover{
+.button-container button:enabled:hover{
   background-color: rgba(128, 128, 128, 0.274);
   cursor:pointer;
+}
+
+.button-container button:disabled{
+  color: rgb(185, 185, 185);
 }
 
 .container .dashboard-container{

@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Search & Book all our destinations</h1>
+  <input
+    [(ngModel)]="filter"
+    (ngModelChange)="emitFilter($event)"
+    placeholder="Select your city"
+  />
+</div>

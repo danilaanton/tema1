@@ -1,5 +1,5 @@
-export interface Service{
-    name: string;
-    article: string;
-    description: string;
+export interface Service {
+  name: string;
+  article: string;
+  description: string;
 }

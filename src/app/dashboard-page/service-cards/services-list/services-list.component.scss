@@ -1,7 +1,7 @@
 .container {
     width: 75%;
-    height: 800px;
-    margin: 20px 12.5% 20px;
+    height: fit-content;
+    margin: 40px 12.5% 40px;
     padding: 0px 50px 0px;
     border-radius: 10px;
     display: flex;
@@ -11,6 +11,8 @@
 
 h1{
   text-align: center;
+  font-family: Arial, Helvetica, sans-serifgu;
+  color: rgb(125, 202, 165);
 }
 
 .container .dashboard-container{

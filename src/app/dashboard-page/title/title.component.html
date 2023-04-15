@@ -1,12 +1,12 @@
-<div class="container">
-    <div class="image-container">
-        <img [src]="selectedCity.image" alt="Image">
-    </div>
-    <div class="sub-container">
-        <h2 class="subtitle">DESCOVER THE COLOURFUL WORLD</h2>
-        <h1 class="title" >{{selectedCity.name | uppercase}}</h1>
-        <div class="line"></div>
-        <h2 class="description">{{selectedCity.description}}</h2>
-        <button>DISCOVER NOW</button>
-    </div>
+<div class="container" *ngIf="selectedCity">
+  <div class="image-container">
+    <img [src]="selectedCity.image" alt="Image" />
   </div>
+  <div class="sub-container">
+    <h2 class="subtitle">DESCOVER THE COLOURFUL WORLD</h2>
+    <h1 class="title">{{ selectedCity.name | uppercase }}</h1>
+    <div class="line"></div>
+    <h2 class="description">{{ selectedCity.description }}</h2>
+    <button>DISCOVER NOW</button>
+  </div>
+</div>

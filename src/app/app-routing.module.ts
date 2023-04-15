@@ -4,15 +4,17 @@ import { MainPageComponent } from './dashboard-page/main-page/main-page.componen
 
 const routes: Routes = [
   {
-    path:'',
-    component:MainPageComponent,
+    path: '',
+    component: MainPageComponent,
     loadChildren: () =>
-      import('./dashboard-page/dashboard-module.module').then((m) => m.DashboardModuleModule),
-  }
+      import('./dashboard-page/dashboard-module.module').then(
+        (m) => m.DashboardModuleModule
+      ),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

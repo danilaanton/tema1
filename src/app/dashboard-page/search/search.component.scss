@@ -1,0 +1,38 @@
+.container{
+    width: 80%;
+    padding: 40px;
+    margin: 40px 10% 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 16px;
+    width:500px;
+    margin: auto;
+    display: block;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: rgb(83, 83, 83);
+  }
+
+  input::placeholder {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serifgu;
+    font-size: 1.2rem;
+  }
+
+  h1{
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serifgu;
+    color: rgb(125, 202, 165);
+    text-align: center;
+  }
+  
+  
+  

@@ -3,15 +3,14 @@ import { Subject } from 'rxjs';
 import { City } from '../models/city';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CitySelectionService {
+  selectedCity: Subject<City> = new Subject<City>();
 
-  selectedCity:Subject<City> = new Subject<City>();
+  constructor() {}
 
-  constructor() { }
-
-  voteBestGame(city:City) {
+  visitNow(city: City) {
     this.selectedCity.next(city);
   }
 }

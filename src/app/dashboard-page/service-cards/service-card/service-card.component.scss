@@ -1,0 +1,33 @@
+.container{
+    border: 0px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 40px;
+}
+
+.container:hover{
+    background-color: rgb(236, 236, 236);
+    cursor:pointer;
+}
+
+h1, p, h2{
+    font-family: Arial, Helvetica, sans-serifgu;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+h1{
+    font-size: 1.4rem;
+    color: rgb(125, 202, 165);
+    white-space: nowrap;
+}
+
+
+p {
+    color:rgb(107, 107, 107);
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
