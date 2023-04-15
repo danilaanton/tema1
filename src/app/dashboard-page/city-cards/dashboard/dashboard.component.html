@@ -9,7 +9,10 @@
   </div>
   <div class="dashboard-container">
     <div *ngFor="let cardElem of visibleCards; let index = index">
-      <app-card [card]="cardElem"></app-card>
+      <app-card
+        [card]="cardElem"
+        (visitNowEmitter)="visitNowCity($event)"
+      ></app-card>
     </div>
   </div>
 </div>

@@ -8,6 +8,7 @@ import {
 import { City } from '../../../models/city';
 import { Service } from 'src/app/models/service';
 import { CityPopulateService } from 'src/app/services/city-populate.service';
+import { CitySelectionService } from 'src/app/services/city-selection.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -22,7 +23,10 @@ export class DashboardComponent {
   rightDisabled: boolean = true;
   pageStep: number = 0;
 
-  constructor(private cityPopulateService: CityPopulateService) {}
+  constructor(
+    private cityPopulateService: CityPopulateService,
+    private citySelectionService: CitySelectionService
+  ) {}
 
   ngOnInit() {
     this.setCityList();
@@ -72,5 +76,9 @@ export class DashboardComponent {
 
   sliceStep(num: number) {
     this.visibleCards = this.cards.slice(num * 5, num * 5 + 6);
+  }
+
+  visitNowCity(city: City) {
+    this.citySelectionService.visitNow(city);
   }
 }

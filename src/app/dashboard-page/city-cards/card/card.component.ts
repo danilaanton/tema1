@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { City } from 'src/app/models/city';
 import { CityPopulateService } from 'src/app/services/city-populate.service';
 import { CitySelectionService } from 'src/app/services/city-selection.service';
@@ -10,10 +10,10 @@ import { CitySelectionService } from 'src/app/services/city-selection.service';
 })
 export class CardComponent {
   @Input() card!: City;
+  @Output() visitNowEmitter:EventEmitter<City> = new EventEmitter<City>;
 
-  constructor(private citySelectionService: CitySelectionService) {}
 
-  subjectCity() {
-    this.citySelectionService.visitNow(this.card);
+  emitCity() {
+    this.visitNowEmitter.emit(this.card);
   }
 }
